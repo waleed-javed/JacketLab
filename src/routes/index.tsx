@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/layout";
-import { Home, NotFoundPage } from "../pages";
+import { About, Contact, Home, NotFoundPage } from "../pages";
 
 const RoutesManager = createBrowserRouter([
   {
@@ -11,6 +11,14 @@ const RoutesManager = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
